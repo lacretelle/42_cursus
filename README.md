@@ -14,5 +14,6 @@
 - Roger Skyline
 
 ## Second Year
+- Red tetris
 - CPP pool
 - Abstract VM
