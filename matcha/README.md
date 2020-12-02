@@ -14,6 +14,4 @@ Node.js
 MySql
 
 # Contributors
-@remyoster
-@jmoussu
-bboutoil
+remyoster
