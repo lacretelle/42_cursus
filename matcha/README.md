@@ -8,9 +8,12 @@ match another user with a more or less matching profile, from among a group of
 selection of profiles of other users that your site will offer.
 Once they have matched each other, these two profiles should be able to exchange sweet words and more if affinities via a private chat that you will have designed.
 
-It's a project group, exactly two people.
-
 # Skills
 React
 Node.js
 MySql
+
+# Contributors
+@remyoster
+@jmoussu
+bboutoil
