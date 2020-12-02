@@ -1,0 +1,12 @@
+; -------------
+; test pushes int 32 -
+; -------------
+push int32(33)
+push int32(-33)
+push int32(3378)
+push int32(0)
+push int32(-6787)
+; ----------
+; ERROR HERE
+; ----------
+push int32(2147483648)

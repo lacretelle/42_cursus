@@ -1,0 +1,13 @@
+; -------------
+; basic_1.avm -
+; PUSH DUMP AND POP
+; -------------
+push int32(127)
+push int32(2)
+push float(42.55)
+push double(42.42)
+push int32(42)
+dump
+pop
+dump
+exit

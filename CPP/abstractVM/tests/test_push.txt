@@ -1,0 +1,13 @@
+; -------------
+; test pushes int 8 -
+; -------------
+push int8(42)
+push int8(-42)
+push int8(0)
+push int8(127)
+push int8(-128)
+; ----------
+; ERROR HERE
+; ----------
+push int8(129)
+exit

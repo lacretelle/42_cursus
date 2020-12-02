@@ -1,0 +1,12 @@
+; -------------
+; test pushes int 16 -
+; -------------
+push int16(33)
+push int16(-33)
+push int16(3378)
+push int16(0)
+push int16(-6787)
+; ----------
+; ERROR HERE
+; ----------
+push int16(-32769)

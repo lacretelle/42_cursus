@@ -1,0 +1,19 @@
+; LEXER ;
+- PUSH alone
+- ASSERT alone
+- int32 (9898) alone
+- add sjkskjk
+- PUSH PUSH int32 (more than 2 instructions)
+AND COMMENT 
+
+; PARSER ;
+- operation => empty stack or less than two inputs in stack !
+- assert // other ACTION=> empty stack 
+- number :
+-> if its not a number: 345gahghg56t, or -244, or +56656
+-> or contains 2 dots etc...
+-> limits of double 
+-> limits of integer
+-> limits float
+-> limits int8 => -128 | 127
+-> limits int16 => -32768 | 32767

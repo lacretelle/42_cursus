@@ -1,0 +1,14 @@
+; -------------
+; basic.avm -
+; -------------
+push int8(131)
+push int16(-2003345)
+div
+push float(42.55)
+mul
+push double(42.42)
+push int32(42)
+dum
+pop
+assert double(42.42)
+exit
