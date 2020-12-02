@@ -1,0 +1,4 @@
+*.DS_store
+*.swp
+node_modules
+client/node_modules

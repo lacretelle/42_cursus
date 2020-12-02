@@ -1,0 +1,22 @@
+.homeLogout {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Crimson Text', serif;
+  background-image: url('/public/img/matcha.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  width: 100%;
+  min-height: 50vw;
+  margin: 0px;
+}
+
+.homeLogout > div {
+  display:flex;
+  flex-direction: column;
+  margin: 20% 2% 0px 75%;
+  padding: 0px 10px;
+  color: #374140;
+  background-color: #4fd13c;
+  border-radius: 20px;
+}
