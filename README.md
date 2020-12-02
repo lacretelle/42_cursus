@@ -13,7 +13,7 @@
 - Init
 - Roger Skyline
 
-## Second Year
+## Second Year:
 - Red tetris
 - CPP pool
 - Abstract VM
