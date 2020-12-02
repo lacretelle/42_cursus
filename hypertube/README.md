@@ -11,9 +11,12 @@ Once an item has been selected, it will be uploaded to the server and played on 
 web at the same time. In other words, the player will not just display the video
 once the download is completed, but will be able to stream the stream directly.
 
-It's a project group, exactly four people.
-
 # Skills
 React
 Node.js
 mySql
+
+# Contributors
+remyoster
+jmoussu 
+bboutoil
