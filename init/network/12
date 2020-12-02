@@ -1,0 +1,1 @@
+ipconfig getpacket en0 | grep "yiaddr" | rev | cut -d ' ' -f1 |rev

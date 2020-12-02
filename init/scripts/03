@@ -1,0 +1,3 @@
+#!/bin/sh
+date > update.log &&
+sudo apt-get update >> update.log

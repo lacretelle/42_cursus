@@ -1,0 +1,5 @@
+session graphique :
+ssh root@server_ip_address
+
+session ssh:
+su - username
