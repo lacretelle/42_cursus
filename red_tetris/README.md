@@ -48,3 +48,6 @@ Run the server
 ### `npm test`
 
 Run test in concurrently mode (need install-all before)
+
+# Contributors
+@remyoster
