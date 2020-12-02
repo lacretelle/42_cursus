@@ -15,3 +15,8 @@ once the download is completed, but will be able to stream the stream directly.
 React
 Node.js
 mySql
+
+# Contributors
+remyoster
+jmoussu 
+bboutoil

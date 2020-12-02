@@ -12,3 +12,6 @@ Once they have matched each other, these two profiles should be able to exchange
 React
 Node.js
 MySql
+
+# Contributors
+remyoster
