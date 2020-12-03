@@ -70,6 +70,9 @@ const char *Exception::what() const throw()
     else if (this->getException() == NOEXIT)
         line
             << "There is no instruction exit at the end of this program.";
+    else if (this->getException() == NOTINT8)
+        line
+            << "The value at the top of the stack is not an 8-bit integer.";
     std::string tmp = line.str();
     char *res = new char[tmp.size() + 1];
     std::copy(tmp.begin(), tmp.end(), res);

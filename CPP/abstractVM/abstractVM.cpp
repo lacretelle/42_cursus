@@ -135,10 +135,13 @@ void AbstractVM::dumpVM()
 }
 void AbstractVM::printVM()
 {
-    // look if this->stackVM.top() is Int8 type
-    // throw EXCEPTION if not
-    // AND ==???? PAS COMPRIS
-    std::cout << "enter here in printVM " << std::endl;
+    const IOperand *currentTop = this->stackVM.top();
+    if (currentTop->getPrecision() != 1)
+        throw Exception(NOTINT8, "", 0);
+    int nb = stoi(currentTop->toString());
+    nb += 128;
+    char c = '0' + nb;
+    std::cout << c << std::endl;
 }
 
 /*
