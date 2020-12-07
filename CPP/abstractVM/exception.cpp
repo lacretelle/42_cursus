@@ -73,6 +73,9 @@ const char *Exception::what() const throw()
     else if (this->getException() == NOTINT8)
         line
             << "The value at the top of the stack is not an 8-bit integer.";
+    else if (this->getException() == NOTINT)
+        line
+            << "This value " << this->getInput() << " isn't an int.";
     std::string tmp = line.str();
     char *res = new char[tmp.size() + 1];
     std::copy(tmp.begin(), tmp.end(), res);

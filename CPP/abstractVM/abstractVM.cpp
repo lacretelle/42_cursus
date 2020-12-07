@@ -110,11 +110,14 @@ void AbstractVM::assertVM(Token *t)
     const IOperand *currentTop = this->stackVM.top();
     if (e == currentTop->getType())
     {
+std::cout.precision(17);
+std::cout << t->getTokenNb() << std::endl;
+std::cout << currentTop->toString() << std::endl;
         if (t->getTokenNb().compare(currentTop->toString()) != 0)
-            throw Exception(ERRORTYPE,"", t->getTokenLine());
+            throw Exception(VALUENOTSAME,"", t->getTokenLine());
     } else
     {
-        throw Exception(VALUENOTSAME,"", t->getTokenLine());
+        throw Exception(ERRORTYPE,"", t->getTokenLine());
     }
 }
 // ACTIONS
@@ -129,6 +132,7 @@ void AbstractVM::dumpVM()
     StackVM<const IOperand *> tmp = StackVM<const IOperand *>(stackVM);
     while (!(tmp.empty()))
     {
+        std::cout.precision(17);
         std::cout << tmp.top()->toString() << std::endl;
         tmp.pop();
     }

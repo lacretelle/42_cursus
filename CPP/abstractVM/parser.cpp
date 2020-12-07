@@ -48,7 +48,7 @@ size_t checkIsDigit(Token *t)
     {
         if (number.compare(0, 1, "-") == 0)
             i++;
-        else if (number.compare(i, 1, ".") == 0 )
+        else if (number.compare(i, 1, ".") == 0)
         {
             nbDot++;
             i++;
@@ -136,13 +136,16 @@ void Parser::parseNumber(Token *t)
     }
     // LIMITS OF INTEGER AND FLOAT
     if (t->getTokenValue() == "int8" || t->getTokenValue() == "int16" || t->getTokenValue() == "int32")
+    {
+        if (nbDot > 0)
+            throw Exception(NOTINT, t->getTokenNb(), t->getTokenLine());
         checkLimitsInteger(tmpNb, t);
-    else if (t->getTokenValue() == "float")
+    } else if (t->getTokenValue() == "float")
         checkLimitsFloat(tmpNb, t);
     // LIMITS INTEGER 8 & 16
-    if (nbDot == 0 && t->getTokenValue().compare("int8") == 0)
+    if (t->getTokenValue().compare("int8") == 0)
         CheckLimitInt8(tmpNb, t);
-    if (nbDot == 0 && t->getTokenValue().compare("int16") == 0)
+    else if (t->getTokenValue().compare("int16") == 0)
         CheckLimitInt16(tmpNb, t);
 }
 /*
