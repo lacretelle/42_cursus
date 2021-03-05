@@ -1,7 +1,4 @@
 #! /bin/bash
-# modif-fichier.sh
-# montuy337513 - CHG-WEB
-# Version 1.00
  
 # Configuration
  
